@@ -1,0 +1,24 @@
+create database BookResale;
+use BookResale;
+
+create table addbook(book_id varchar(50) primary Key,
+seller_name varchar(50),
+book_name varchar(50),
+category varchar(50),
+author_names varchar(250),
+subject varchar(50),
+cost varchar(10),
+image  varchar(150));
+
+
+create table newuser(username varchar(50),password varchar(50),contact_no varchar(15),address varchar(100),email  varchar(100));
+
+create table orders(order_id int,buyer varchar(50),seller varchar(50),
+card_no varchar(50),
+cvv_no varchar(12),
+expiry_date varchar(20),
+order_date varchar(30),
+product_id varchar(100),
+total_amount double);
+
+
